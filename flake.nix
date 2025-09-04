@@ -19,7 +19,7 @@
         pname = "vensocket";
         version = "1.0.0";
 
-        src = fetchFromGitHub {
+        src = pkgs.fetchFromGitHub {
           owner = "s4midev";
           repo = "vensocket";
           rev = "6dfad41b667a5e7c70c68f693ef3fbb19729b43c";
