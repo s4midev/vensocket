@@ -20,17 +20,17 @@
         version = "1.0.0";
 
         src = fetchFromGitHub {
-          owner = "username";
-          repo = "repository";
-          rev = "commit-hash";
-          sha256 = "sha256-hash";
+          owner = "s4midev";
+          repo = "vensocket";
+          rev = "6dfad41b667a5e7c70c68f693ef3fbb19729b43c";
+          sha256 = "6dfad41b667a5e7c70c68f693ef3fbb19729b43c";
         };
 
         buildInputs = [pkgs.nim pkgs.nimPackages.nimble];
 
         installPhase = ''
           mkdir -p $out/bin
-          nim compile --bin $out/bin/my-nim-package
+          nim compile --bin $out/bin/vensocket
         '';
       };
     });
